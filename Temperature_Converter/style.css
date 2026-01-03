@@ -4,11 +4,35 @@
     align-items: center;
     justify-content: center;
     padding-top: 20vh;
+    font-family: sans-serif;
 }
 .title{
     display: grid;
-    grid-template-columns: 1fr 1/2fr;
+    grid-template-columns: 5.5fr 1fr;
 }
 img{
     width: 100px;
+}
+body{
+    background-color: teal;
+}
+.converter{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+
+}
+.celsius{
+    padding:40px;
+    padding-right: 20px;
+}
+.farenheit{
+    padding:40px;
+    padding-left: 20px;
+}
+h1{
+    text-align: right;
+    padding-top: 20px;
 }

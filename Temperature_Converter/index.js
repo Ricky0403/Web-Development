@@ -16,8 +16,8 @@ $("#Celsius").keydown(function(){
 })
 $("#Farenheit").keydown(function(){
     setTimeout(function(){
-        var cel = $("#Farenheit").val();
-        var fer = cel_fer(cel);
-        $("#Celsius").val(fer);
+        var fer = $("#Farenheit").val();
+        var cel = fer_cel(fer);
+        $("#Celsius").val(cel);
     },100);
 })

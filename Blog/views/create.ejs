@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="styles/style.css" rel = 'stylesheet'/>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <%-include("partial/header.ejs")%>
+    <h1 class="about-title">Create a New Blog Post</h1>
+    <div class = "flex-fill d-flex justify-content-center">
+        
+        <form class = "border p-5 col-md-10 mb-5 mt-4 rounded-3 d-flex flex-column" action="/submit" method="POST" enctype="multipart/form-data">
+            <div class = "mb-3 about-content">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Title" name="title">
+            </div>
+            <div class = "mb-3 about-content">
+                <label for="image-upload">Select an image</label>
+                <input type="file" class="form-control form-control-sm w-auto" id="image-upload" name="image-upload" accept="image/*">
+            </div>
+            <div class = "mb-3 about-content flex-grow-1 d-flex flex-column">
+                <label for="content" class="form-label">Content</label>
+                <textarea class="form-control content-box flex-grow-1" id="content" placeholder="Content" name="content"></textarea>
+            </div>
+            <div class="mb-3 about-content d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary w-25">Submit</button>
+            </div>
+        </form>
+    </div>
+    <%- include("partial/footer.ejs")%>
+</body>
+</html>

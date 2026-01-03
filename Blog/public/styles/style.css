@@ -1,0 +1,58 @@
+.nav-link{
+    color:#2E4A5A;
+}
+.nav-item{
+    font-size: large;
+}
+.navbar{
+    background-color:  #CFE6F2;
+}
+.login{
+    background-color: #2E4A5A;
+    color: #CFE6F2;
+}
+#footer{
+    height:25px;
+    background-color: #CFE6F2;
+    
+}
+#footer-content{
+    color: #2E4A5A;
+    text-align: end;
+    padding-right: 10px;  
+}
+#footer-content>p{
+    font-size: 15px;
+    margin: 0px;
+}
+
+.about-title{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.about-content{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.content-box {
+    min-height: 70vh;
+    resize: vertical;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.image-custom {
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    object-fit: contain;
+    display: block;
+}
