@@ -1,0 +1,16 @@
+{
+  "name": "country-code-converter",
+  "version": "1.0.0",
+  "description": "Converts IOC, FIFA, ISO3, and IOS2 country codes",
+  "repository": "tylerhuyser/country-code-converter",
+  "main": "index.js",
+  "keywords": [
+    "country names",
+    "country codes",
+    "IOC",
+    "FIFA",
+    "ISO3",
+    "ISO2",
+    "converter"
+  ]
+}

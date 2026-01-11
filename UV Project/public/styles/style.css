@@ -1,0 +1,15 @@
+.customContainer {
+    width: 35%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+body{
+    background: linear-gradient(to right, red, orange, yellow);
+}
+.customColor{
+    background-color: orange;
+    color: white;
+    border: none;
+}
