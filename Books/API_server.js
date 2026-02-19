@@ -56,7 +56,7 @@ app.post("/add", async(req, res) => {
   }
   const title = req.body.title;
   const author = req.body.author;
-  const rating = parseFloat(req.body.rating);  // Convert to number
+  const rating = parseFloat(req.body.rating);  
   const summary = req.body.summary;
   
   // Validate types first

@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Books</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
-<body>
-    <image src="https://covers.openlibrary.org/b/id/12059372-L.jpg" alt="Bookstore Image" style="width:100%; height:auto;">
+<body class = "container justify-content-center text-center p-3">
+    <h1 class = "main-title">Books Collection</h1>
+    <p>Here are the books I have read with rating and summary</p>
+    <hr style="margin-bottom: 100px;">
+    <div class = "card-container">
+        <% if(books.length > 0) { %>
+            <% books.forEach(book => { %>
+                <div class="cards">
+                    <div class="image-container">
+                        <img src="<%= book.image_url %>" class="card-img" alt="...">
+                    </div>
+                    <div class="title-container">
+                        <h3><%= book.title %> by <%= book.author %></h3>
+                        <p>Date: <%= book.entry_date.slice(0, 10) %> Rating: <%= book.rating %></p>
+
+                    </div>
+                    <div class="summary-container">
+                        <h4>Summary:</h4>
+                        <p class="card-text"><%= book.summary %></p>
+                    </div>
+                </div>
+            <% })%>
+        <% } else { %>
+            <p>No books available.</p>
+        <% } %>
+    </div>
 </body>
 </html>

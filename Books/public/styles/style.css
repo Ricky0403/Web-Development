@@ -1,0 +1,49 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.main-title{
+  margin-top: 50px;
+}
+
+.card-container{
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  min-height: 100vh; 
+}
+
+.cards {
+  width: 70%;
+  padding: 20px;
+}
+
+.image-container {
+  float: left;
+  width: 25%; 
+  margin-right: 20px; 
+  margin-bottom: 10px; 
+}
+
+.image-container img {
+  width: 100%; 
+  height: auto;
+  padding: 0; 
+}
+
+.title-container {
+  text-align: left;
+}
+
+.summary-container {
+  text-align: left;
+}
+
+.cards::after {
+  content: "";
+  display: table;
+  clear: both;
+}
